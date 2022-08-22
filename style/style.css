@@ -69,9 +69,16 @@ img {
     height: 65px;
     background-color: #C300C7;
     border-radius: 30px;
-    border: none;
+    border: 1px solid transparent;
     color: #fff;
     margin-right: 30px;
+    transition: .36s ease-in-out;
+}
+
+.header__button-change:hover {
+    color: #C300C7;
+    border: 1px solid #c300c7;
+    background-color: #fff;
 }
 
 .header__button-change:last-child {
