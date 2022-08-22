@@ -44,6 +44,13 @@ img {
     height: auto;
 }
 
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
 .container {
     max-width: 1300px;
     padding: 0 20px;
@@ -135,6 +142,44 @@ img {
     top: 50%;
     transform: translate(-50%, -50%);
     font-size: max(3em, min(calc(100vw * 3 / 140), 6em));
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 17px;
+}
+.footer__author-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+.design {
+    
+}
+.coder {
+    
+}
+.copyright {
+    font-size: 14px;
+    line-height: 19px;
+}
+.footer__social-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__social_item {
+    margin-right: 16px;
+}
+
+.footer__social_link {
+
 }
 
 @media (max-width: 880px) {
