@@ -32,7 +32,6 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    padding-bottom: 17px;
 }
 
 button {
@@ -71,6 +70,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 30px;
 }
 
 .header__button-change {
@@ -132,7 +132,7 @@ a {
 
 .card {
     flex-grow: 1;
-    padding: 32px 0;
+    padding: 32px 0 15px;
     display: flex;
     align-items: center;
 }
@@ -158,11 +158,14 @@ a {
     font-size: max(3em, min(calc(100vw * 3 / 140), 6em));
 }
 
+
+.footer {
+    padding: 17px 0;
+}
 .footer__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 17px;
 }
 .footer__author-wrapper {
     display: flex;
@@ -188,10 +191,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.footer__social_item {
-    margin-right: 16px;
+    gap: 16px;
 }
 
 .social_pic {
@@ -225,5 +225,27 @@ a {
         height: 40px;
         background-size: 30px;
         margin-right: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer__container {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .footer__author-wrapper {
+
+    }
+    .design {
+
+    }
+    .coder {
+
+    }
+    .copyright {
+
+    }
+    .footer__social-wrapper {
+        order: -1;
     }
 }
