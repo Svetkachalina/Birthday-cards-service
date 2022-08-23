@@ -103,6 +103,10 @@ a {
     margin-right: 0;
 }
 
+._blue {
+    background-color: #1178B2;
+}
+
 .header__button-gender {
     width: 60px;
     height: 60px;
